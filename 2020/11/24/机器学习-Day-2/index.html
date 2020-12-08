@@ -11,15 +11,15 @@
   
   
   
-  <meta name="description" content="Notation m &#x3D; Number of training example x’s &#x3D; “input” variable&#x2F;features y’s &#x3D; “output” variable &#x2F;“target” variable (x,y) &#x3D; one training example (x(i),y(i)) &#x3D; ith training example (ith row) h &#x3D; hypothe">
+  <meta name="description" content="Notation m &#x3D; Number of training example(number of vector) n &#x3D; number of features(dimension of vector) x’s &#x3D; “input” variable&#x2F;features y’s &#x3D; “output” variable &#x2F;“target” variable (x,y) &#x3D; one training ex">
 <meta property="og:type" content="article">
 <meta property="og:title" content="机器学习 Day 2">
 <meta property="og:url" content="http://example.com/2020/11/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-Day-2/index.html">
 <meta property="og:site_name" content="Wow">
-<meta property="og:description" content="Notation m &#x3D; Number of training example x’s &#x3D; “input” variable&#x2F;features y’s &#x3D; “output” variable &#x2F;“target” variable (x,y) &#x3D; one training example (x(i),y(i)) &#x3D; ith training example (ith row) h &#x3D; hypothe">
+<meta property="og:description" content="Notation m &#x3D; Number of training example(number of vector) n &#x3D; number of features(dimension of vector) x’s &#x3D; “input” variable&#x2F;features y’s &#x3D; “output” variable &#x2F;“target” variable (x,y) &#x3D; one training ex">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-11-24T13:16:07.000Z">
-<meta property="article:modified_time" content="2020-11-26T15:23:27.794Z">
+<meta property="article:modified_time" content="2020-11-27T13:34:10.693Z">
 <meta property="article:author" content="Lxq">
 <meta property="article:tag" content="机器学习">
 <meta name="twitter:card" content="summary">
@@ -200,11 +200,14 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="Notation"><a href="#Notation" class="headerlink" title="Notation"></a>Notation</h2><ul>
-<li>m = Number of training example</li>
+<li>m = Number of training example(number of vector)</li>
+<li>n = number of features(dimension of vector)</li>
 <li>x’s = “input” variable/features</li>
 <li>y’s = “output” variable /“target” variable</li>
 <li>(x,y) = one training example</li>
 <li>(x<sup>(i)</sup>,y<sup>(i)</sup>) = i<sup>th</sup> training example (i<sup>th</sup> row)</li>
+<li>x<sup>(i)</sup> = input (features) of i<sup>th</sup> training example</li>
+<li>x<sup>(i)</sup><sub>j</sub>  = value of feature j in i<sup>th</sup> training example</li>
 <li>h = hypothesis</li>
 <li>J = cost function</li>
 </ul>

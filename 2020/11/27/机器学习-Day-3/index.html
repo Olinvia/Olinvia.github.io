@@ -19,7 +19,7 @@
 <meta property="og:description" content="Multivariate Linear Regression$$h_\theta(x)&#x3D; \theta_0 +\theta_1x_1+\theta_2x_2+…+\theta_nx_x$$ For convenience of notation, define x0 &#x3D; 1.(x0(i) &#x3D;1)$$x&#x3D;\begin{bmatrix}    x_0\    x_1\    x_2\    .\">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-11-27T13:35:27.000Z">
-<meta property="article:modified_time" content="2020-11-27T15:14:10.185Z">
+<meta property="article:modified_time" content="2020-12-13T03:18:10.445Z">
 <meta property="article:author" content="Lxq">
 <meta property="article:tag" content="机器学习">
 <meta name="twitter:card" content="summary">
@@ -206,6 +206,20 @@
 <h2 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h2><p>Repeat{</p>
 <p>​<br>$$<br>\theta_j :=\theta_j - \alpha \frac{1}{m}\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})x_j^{(i)}<br>$$<br>(simultaneously update $\theta$<sub>j</sub> for j =0,1,2,3,…,n)</p>
 <p>}</p>
+<h2 id="Feature-Scaling"><a href="#Feature-Scaling" class="headerlink" title="Feature Scaling"></a>Feature Scaling</h2><p>Get every feature into approximately a -3$\leqslant$x$ \leqslant$3 / -$\frac{1}{3}$$\leqslant$ x &lt; $\frac{1}{3}$ range.</p>
+<p>Replace x<sub>i</sub> with x<sub>i</sub> - $\mu$<sub>i</sub> to make features have approximately zero mean.</p>
+<p>$x$ $\Rightarrow$ $\frac{x-\mu}{s}$ </p>
+<p>$\mu$ = average  </p>
+<p>s = max - min </p>
+<h2 id="Debug"><a href="#Debug" class="headerlink" title="Debug"></a>Debug</h2><p>Choose the right $\alpha$ .</p>
+<h2 id="Polynomial-Regression"><a href="#Polynomial-Regression" class="headerlink" title="Polynomial Regression"></a>Polynomial Regression</h2><p>$$<br>h_\theta(x) = \theta_0+\theta_1x+\theta_2x^2+\theta_3x^3<br>=\theta_0+\theta_1x+\theta_2x_2+\theta_3x_3<br>$$</p>
+<p>Pay attention to feature scaling.</p>
+<h2 id="Normal-Equation"><a href="#Normal-Equation" class="headerlink" title="Normal Equation"></a>Normal Equation</h2><p>X m*(n+1) </p>
+<p>Y m*1</p>
+<p>(m is the number of training examples, n is the number of features)<br>$$<br>\theta = (X^TX)^{-1}X^Ty<br>$$</p>
+<p>$$<br>X =<br>\begin{bmatrix}<br>…\<br>(X^{i})^T\<br>…<br>\end{bmatrix}<br>$$</p>
+<p>No need to do feature scaling.</p>
+<p>Slow if n is very large(bigger than 10000).</p>
 
       
     </div>
@@ -251,7 +265,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
     
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Multivariate-Linear-Regression"><span class="nav-number">1.</span> <span class="nav-text">Multivariate Linear Regression</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Algorithm"><span class="nav-number">2.</span> <span class="nav-text">Algorithm</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Multivariate-Linear-Regression"><span class="nav-number">1.</span> <span class="nav-text">Multivariate Linear Regression</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Algorithm"><span class="nav-number">2.</span> <span class="nav-text">Algorithm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Feature-Scaling"><span class="nav-number">3.</span> <span class="nav-text">Feature Scaling</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Debug"><span class="nav-number">4.</span> <span class="nav-text">Debug</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Polynomial-Regression"><span class="nav-number">5.</span> <span class="nav-text">Polynomial Regression</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Normal-Equation"><span class="nav-number">6.</span> <span class="nav-text">Normal Equation</span></a></li></ol>
     
     </div>
   </aside>

@@ -11,12 +11,12 @@
   
   
   
-  <meta name="description" content="Matlab Tips1.数组1.1 等差、等比数组 等差数组 ：linspace(start_var,stop_var,n)          等比数组：logspace(start_var,stop_var,n)    1.2 三维数组 连接数组：cat(dim,A1,A2,A3,……)  复制数组：repmat(A,[m,n,p…])  重塑数组：reshape(A,[m,n,p…])">
+  <meta name="description" content="Matlab Tips1. 数组1.1 等差、等比数组 等差数组 ：linspace (start_var,stop_var,n)          等比数组：logspace (start_var,stop_var,n)    1.2 三维数组 连接数组：cat (dim,A1,A2,A3,……)  复制数组：repmat (A,[m,n,p…])  重塑数组：reshape (A,[m,n,p">
 <meta property="og:type" content="article">
 <meta property="og:title" content="matlab tips">
 <meta property="og:url" content="http://example.com/2021/04/18/matlab-tips/index.html">
 <meta property="og:site_name" content="Wow">
-<meta property="og:description" content="Matlab Tips1.数组1.1 等差、等比数组 等差数组 ：linspace(start_var,stop_var,n)          等比数组：logspace(start_var,stop_var,n)    1.2 三维数组 连接数组：cat(dim,A1,A2,A3,……)  复制数组：repmat(A,[m,n,p…])  重塑数组：reshape(A,[m,n,p…])">
+<meta property="og:description" content="Matlab Tips1. 数组1.1 等差、等比数组 等差数组 ：linspace (start_var,stop_var,n)          等比数组：logspace (start_var,stop_var,n)    1.2 三维数组 连接数组：cat (dim,A1,A2,A3,……)  复制数组：repmat (A,[m,n,p…])  重塑数组：reshape (A,[m,n,p">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-04-18T15:26:53.000Z">
 <meta property="article:modified_time" content="2021-04-19T15:07:12.210Z">
@@ -199,84 +199,84 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="Matlab-Tips"><a href="#Matlab-Tips" class="headerlink" title="Matlab Tips"></a>Matlab Tips</h3><h4 id="1-数组"><a href="#1-数组" class="headerlink" title="1.数组"></a>1.数组</h4><h5 id="1-1-等差、等比数组"><a href="#1-1-等差、等比数组" class="headerlink" title="1.1 等差、等比数组"></a>1.1 等差、等比数组</h5><ul>
-<li><p>等差数组 ：linspace(start_var,stop_var,n)        </p>
+        <h3 id="Matlab-Tips"><a href="#Matlab-Tips" class="headerlink" title="Matlab Tips"></a>Matlab Tips</h3><h4 id="1-数组"><a href="#1-数组" class="headerlink" title="1. 数组"></a>1. 数组</h4><h5 id="1-1-等差、等比数组"><a href="#1-1-等差、等比数组" class="headerlink" title="1.1 等差、等比数组"></a>1.1 等差、等比数组</h5><ul>
+<li><p>等差数组 ：linspace (start_var,stop_var,n)        </p>
 </li>
-<li><p>等比数组：logspace(start_var,stop_var,n) </p>
+<li><p>等比数组：logspace (start_var,stop_var,n) </p>
 </li>
 </ul>
 <h5 id="1-2-三维数组"><a href="#1-2-三维数组" class="headerlink" title="1.2 三维数组"></a>1.2 三维数组</h5><ul>
-<li><p>连接数组：cat(dim,A1,A2,A3,……)</p>
+<li><p>连接数组：cat (dim,A1,A2,A3,……)</p>
 </li>
-<li><p>复制数组：repmat(A,[m,n,p…])</p>
+<li><p>复制数组：repmat (A,[m,n,p…])</p>
 </li>
-<li><p>重塑数组：reshape(A,[m,n,p…])   (按列排)</p>
+<li><p>重塑数组：reshape (A,[m,n,p…])   (按列排)</p>
 </li>
 </ul>
 <h5 id="1-3-低维标准数组"><a href="#1-3-低维标准数组" class="headerlink" title="1.3 低维标准数组"></a>1.3 低维标准数组</h5><ul>
-<li><p>全零矩阵：zeros(m,n)</p>
+<li><p>全零矩阵：zeros (m,n)</p>
 </li>
-<li><p>全一矩阵：ones(m,n)</p>
+<li><p>全一矩阵：ones (m,n)</p>
 </li>
-<li><p>单位矩阵：eye(n)</p>
+<li><p>单位矩阵：eye (n)</p>
 </li>
 </ul>
 <h5 id="1-4-数组运算"><a href="#1-4-数组运算" class="headerlink" title="1.4 数组运算"></a>1.4 数组运算</h5><ul>
-<li><p>加法：sum(A)</p>
+<li><p>加法：sum (A)</p>
 <p>A=[1,2,3;4,5,6]</p>
-<p>sum(A)=[5,7,9]</p>
+<p>sum (A)=[5,7,9]</p>
 </li>
-<li><p>积分：int(f,a,b) 从a积到b</p>
+<li><p>积分：int (f,a,b) 从 a 积到 b</p>
 </li>
-<li><p>行列式：det(A)</p>
-<p>逆：inv(A)</p>
-<p>特征根：[V,D]=eig(A)</p>
+<li><p>行列式：det (A)</p>
+<p>逆：inv (A)</p>
+<p>特征根：[V,D]=eig (A)</p>
 </li>
 <li><p>变量定义：syms x,y,z;</p>
-<p>变量代换：subs(f,x,1) 即表达式f中的x=1</p>
+<p>变量代换：subs (f,x,1) 即表达式 f 中的 x=1</p>
 </li>
-<li><p>反三角：asin() acos() atan()</p>
+<li><p>反三角：asin () acos () atan ()</p>
 </li>
-<li><p>指数：exp(X) 分别计算每一元素的指数</p>
-<p>​            expm(X) 计算矩阵指数 矩阵必须为方阵</p>
+<li><p>指数：exp (X) 分别计算每一元素的指数</p>
+<p>​            expm (X) 计算矩阵指数 矩阵必须为方阵</p>
 </li>
-<li><p>对数：log(X)</p>
-<p>​            [L,exitflag]=logm(A) exitflag为0就算成功 </p>
+<li><p>对数：log (X)</p>
+<p>​            [L,exitflag]=logm (A) exitflag 为 0 就算成功 </p>
 </li>
-<li><p>复数：complex(A,B=0) 无论B是否为0都算复数</p>
-<p>共轭：conj(Z)</p>
+<li><p>复数：complex (A,B=0) 无论 B 是否为 0 都算复数</p>
+<p>共轭：conj (Z)</p>
 </li>
-<li><p>绝对值：ans(X)</p>
+<li><p>绝对值：ans (X)</p>
 </li>
-<li><p>因式分解：factor(f)</p>
-<p>展开：expand(f)</p>
-<p>合并同类项：collect(E,v) v为要合并的变量</p>
-<p>化解：simplify(E)</p>
+<li><p>因式分解：factor (f)</p>
+<p>展开：expand (f)</p>
+<p>合并同类项：collect (E,v) v 为要合并的变量</p>
+<p>化解：simplify (E)</p>
 </li>
-<li><p>复合运算：compose(f,g) f=f(x) g=g(y) f(g(y))</p>
-<p>反函数：finverse(f)</p>
+<li><p>复合运算：compose (f,g) f=f (x) g=g (y) f (g (y))</p>
+<p>反函数：finverse (f)</p>
 </li>
 </ul>
-<h4 id="2-建模"><a href="#2-建模" class="headerlink" title="2.建模"></a>2.建模</h4><h5 id="2-1文件处理"><a href="#2-1文件处理" class="headerlink" title="2.1文件处理"></a>2.1文件处理</h5><ul>
+<h4 id="2-建模"><a href="#2-建模" class="headerlink" title="2. 建模"></a>2. 建模</h4><h5 id="2-1-文件处理"><a href="#2-1-文件处理" class="headerlink" title="2.1 文件处理"></a>2.1 文件处理</h5><ul>
 <li>load *.mat</li>
 </ul>
-<h5 id="2-2统计学"><a href="#2-2统计学" class="headerlink" title="2.2统计学"></a>2.2统计学</h5><ul>
-<li><p>平均：mean(A)</p>
-<p>中位数：median(A)</p>
-<p>方差：var(A)</p>
-<p>标准差：std(A) 忽略NaN：nanstd(A)</p>
+<h5 id="2-2-统计学"><a href="#2-2-统计学" class="headerlink" title="2.2 统计学"></a>2.2 统计学</h5><ul>
+<li><p>平均：mean (A)</p>
+<p>中位数：median (A)</p>
+<p>方差：var (A)</p>
+<p>标准差：std (A) 忽略 NaN：nanstd (A)</p>
 </li>
-<li><p>正态分布检测：jbtest(A,alpha) alpha默认为0.05 检验结果h=0则认为A服从正态分布</p>
+<li><p>正态分布检测：jbtest (A,alpha) alpha 默认为 0.05 检验结果 h=0 则认为 A 服从正态分布</p>
 </li>
-<li><p>生成二项分布随机数：binornd(N,P,m,n) </p>
-<p>某射击手进行射击比赛，假设每枪射击命中率为0.45 ，每轮射击10次，共进行了10万轮，求这10万轮每轮命中成绩的可能情况。</p>
-<p>binornd(10,0.45,100000,1)</p>
+<li><p>生成二项分布随机数：binornd (N,P,m,n) </p>
+<p>某射击手进行射击比赛，假设每枪射击命中率为 0.45 ，每轮射击 10 次，共进行了 10 万轮，求这 10 万轮每轮命中成绩的可能情况。</p>
+<p>binornd (10,0.45,100000,1)</p>
 </li>
-<li><p>生成泊松分布随机数：poisspdf(x,Lambda)</p>
+<li><p>生成泊松分布随机数：poisspdf (x,Lambda)</p>
 </li>
-<li><p>生成均匀分布随机数：unifrnd(A,B)</p>
+<li><p>生成均匀分布随机数：unifrnd (A,B)</p>
 </li>
-<li><p>生成正态分布随机数：normrnd(mu,sigma) mu为均值 sigma为标准差</p>
+<li><p>生成正态分布随机数：normrnd (mu,sigma) mu 为均值 sigma 为标准差</p>
 </li>
 </ul>
 <h5 id="2-3-程序设计"><a href="#2-3-程序设计" class="headerlink" title="2.3 程序设计"></a>2.3 程序设计</h5><ul>
@@ -286,13 +286,13 @@
 <p>逻辑非：~</p>
 <p>and：&amp;&amp;</p>
 <p>or：||（存在逻辑短路）</p>
-<p>a%b：rem(a,b)</p>
+<p>a% b：rem (a,b)</p>
 </li>
 <li><p>雅可比迭代算法</p>
 <p>拉格朗日插值函数算法</p>
 <p>最小生成树算法</p>
-<p>最短路Dijkstra算法</p>
-<p>Ford算法</p>
+<p>最短路 Dijkstra 算法</p>
+<p>Ford 算法</p>
 <p>模糊聚类分析算法</p>
 <p>层次分析算法</p>
 </li>
@@ -342,7 +342,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
     
-        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Matlab-Tips"><span class="nav-number">1.</span> <span class="nav-text">Matlab Tips</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E6%95%B0%E7%BB%84"><span class="nav-number">1.1.</span> <span class="nav-text">1.数组</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-1-%E7%AD%89%E5%B7%AE%E3%80%81%E7%AD%89%E6%AF%94%E6%95%B0%E7%BB%84"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1 等差、等比数组</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-2-%E4%B8%89%E7%BB%B4%E6%95%B0%E7%BB%84"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.2 三维数组</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-3-%E4%BD%8E%E7%BB%B4%E6%A0%87%E5%87%86%E6%95%B0%E7%BB%84"><span class="nav-number">1.1.3.</span> <span class="nav-text">1.3 低维标准数组</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-4-%E6%95%B0%E7%BB%84%E8%BF%90%E7%AE%97"><span class="nav-number">1.1.4.</span> <span class="nav-text">1.4 数组运算</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E5%BB%BA%E6%A8%A1"><span class="nav-number">1.2.</span> <span class="nav-text">2.建模</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-1%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86"><span class="nav-number">1.2.1.</span> <span class="nav-text">2.1文件处理</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2%E7%BB%9F%E8%AE%A1%E5%AD%A6"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.2统计学</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-3-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1"><span class="nav-number">1.2.3.</span> <span class="nav-text">2.3 程序设计</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-4-%E6%8B%9F%E5%90%88"><span class="nav-number">1.2.4.</span> <span class="nav-text">2.4 拟合</span></a></li></ol></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Matlab-Tips"><span class="nav-number">1.</span> <span class="nav-text">Matlab Tips</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E6%95%B0%E7%BB%84"><span class="nav-number">1.1.</span> <span class="nav-text">1. 数组</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-1-%E7%AD%89%E5%B7%AE%E3%80%81%E7%AD%89%E6%AF%94%E6%95%B0%E7%BB%84"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1 等差、等比数组</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-2-%E4%B8%89%E7%BB%B4%E6%95%B0%E7%BB%84"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.2 三维数组</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-3-%E4%BD%8E%E7%BB%B4%E6%A0%87%E5%87%86%E6%95%B0%E7%BB%84"><span class="nav-number">1.1.3.</span> <span class="nav-text">1.3 低维标准数组</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-4-%E6%95%B0%E7%BB%84%E8%BF%90%E7%AE%97"><span class="nav-number">1.1.4.</span> <span class="nav-text">1.4 数组运算</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E5%BB%BA%E6%A8%A1"><span class="nav-number">1.2.</span> <span class="nav-text">2. 建模</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-1-%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86"><span class="nav-number">1.2.1.</span> <span class="nav-text">2.1 文件处理</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-%E7%BB%9F%E8%AE%A1%E5%AD%A6"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.2 统计学</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-3-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1"><span class="nav-number">1.2.3.</span> <span class="nav-text">2.3 程序设计</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-4-%E6%8B%9F%E5%90%88"><span class="nav-number">1.2.4.</span> <span class="nav-text">2.4 拟合</span></a></li></ol></li></ol></li></ol>
     
     </div>
   </aside>

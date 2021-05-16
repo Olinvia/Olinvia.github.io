@@ -11,12 +11,12 @@
   
   
   
-  <meta name="description" content="Give Python A Damn1.在cmd输入python,遇到如下警告:12Warning:This Python interpreter is in a conda environment, but the environment has not been activated.  Libraries may fail to load.  To activate this environm">
+  <meta name="description" content="Give Python A Damn1. 在 cmd 输入 python, 遇到如下警告:12Warning:This Python interpreter is in a conda environment, but the environment has not been activated.  Libraries may fail to load.  To activate this env">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Give Python A Damn">
 <meta property="og:url" content="http://example.com/2021/04/19/Give-Python-A-Damn/index.html">
 <meta property="og:site_name" content="Wow">
-<meta property="og:description" content="Give Python A Damn1.在cmd输入python,遇到如下警告:12Warning:This Python interpreter is in a conda environment, but the environment has not been activated.  Libraries may fail to load.  To activate this environm">
+<meta property="og:description" content="Give Python A Damn1. 在 cmd 输入 python, 遇到如下警告:12Warning:This Python interpreter is in a conda environment, but the environment has not been activated.  Libraries may fail to load.  To activate this env">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-04-19T02:42:52.000Z">
 <meta property="article:modified_time" content="2021-04-19T03:45:11.430Z">
@@ -199,22 +199,22 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="Give-Python-A-Damn"><a href="#Give-Python-A-Damn" class="headerlink" title="Give Python A Damn"></a>Give Python A Damn</h4><h5 id="1-在cmd输入python-遇到如下警告"><a href="#1-在cmd输入python-遇到如下警告" class="headerlink" title="1.在cmd输入python,遇到如下警告:"></a>1.在cmd输入python,遇到如下警告:</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Warning:</span><br><span class="line">This Python interpreter is in a conda environment, but the environment has not been activated.  Libraries may fail to load.  To activate this environment please see https:&#x2F;&#x2F;conda.io&#x2F;activation</span><br></pre></td></tr></table></figure>
+        <h4 id="Give-Python-A-Damn"><a href="#Give-Python-A-Damn" class="headerlink" title="Give Python A Damn"></a>Give Python A Damn</h4><h5 id="1-在-cmd-输入-python-遇到如下警告"><a href="#1-在-cmd-输入-python-遇到如下警告" class="headerlink" title="1. 在 cmd 输入 python, 遇到如下警告:"></a>1. 在 cmd 输入 python, 遇到如下警告:</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Warning:</span><br><span class="line">This Python interpreter is in a conda environment, but the environment has not been activated.  Libraries may fail to load.  To activate this environment please see https:&#x2F;&#x2F;conda.io&#x2F;activation</span><br></pre></td></tr></table></figure>
 
 <p>解决方法:</p>
-<p>先exit()退出python命令框,然后直接输入</p>
+<p>先 exit () 退出 python 命令框，然后直接输入</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CALL conda.bat activate</span><br></pre></td></tr></table></figure>
 
 
 
-<p>2.pip安装包失败,遇到如下报错:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">WARNING: Retrying (Retry(total&#x3D;4, connect&#x3D;None, read&#x3D;None, redirect&#x3D;None, status&#x3D;None)) after connection broken by &#39;ProxyError(&#39;Cannot connect to proxy.&#39;, OSError(0, &#39;Error&#39;))&#39;: &#x2F;simple&#x2F;urllib&#x2F;</span><br><span class="line">WARNING: Retrying (Retry(total&#x3D;3, connect&#x3D;None, read&#x3D;None, redirect&#x3D;None, status&#x3D;None)) after connection broken by &#39;ProxyError(&#39;Cannot connect to proxy.&#39;, OSError(0, &#39;Error&#39;))&#39;: &#x2F;simple&#x2F;urllib&#x2F;</span><br><span class="line">WARNING: Retrying (Retry(total&#x3D;2, connect&#x3D;None, read&#x3D;None, redirect&#x3D;None, status&#x3D;None)) after connection broken by &#39;ProxyError(&#39;Cannot connect to proxy.&#39;, OSError(0, &#39;Error&#39;))&#39;: &#x2F;simple&#x2F;urllib&#x2F;</span><br><span class="line">WARNING: Retrying (Retry(total&#x3D;1, connect&#x3D;None, read&#x3D;None, redirect&#x3D;None, status&#x3D;None)) after connection broken by &#39;ProxyError(&#39;Cannot connect to proxy.&#39;, OSError(0, &#39;Error&#39;))&#39;: &#x2F;simple&#x2F;urllib&#x2F;</span><br><span class="line">WARNING: Retrying (Retry(total&#x3D;0, connect&#x3D;None, read&#x3D;None, redirect&#x3D;None, status&#x3D;None)) after connection broken by &#39;ProxyError(&#39;Cannot connect to proxy.&#39;, OSError(0, &#39;Error&#39;))&#39;: &#x2F;simple&#x2F;urllib&#x2F;</span><br><span class="line">ERROR: Could not find a version that satisfies the requirement urllib</span><br><span class="line">ERROR: No matching distribution found for urllib</span><br></pre></td></tr></table></figure>
+<p>2.pip 安装包失败，遇到如下报错:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">WARNING: Retrying (Retry (total&#x3D;4, connect&#x3D;None, read&#x3D;None, redirect&#x3D;None, status&#x3D;None)) after connection broken by &#39;ProxyError (&#39;Cannot connect to proxy.&#39;, OSError (0, &#39;Error&#39;))&#39;: &#x2F;simple&#x2F;urllib&#x2F;</span><br><span class="line">WARNING: Retrying (Retry (total&#x3D;3, connect&#x3D;None, read&#x3D;None, redirect&#x3D;None, status&#x3D;None)) after connection broken by &#39;ProxyError (&#39;Cannot connect to proxy.&#39;, OSError (0, &#39;Error&#39;))&#39;: &#x2F;simple&#x2F;urllib&#x2F;</span><br><span class="line">WARNING: Retrying (Retry (total&#x3D;2, connect&#x3D;None, read&#x3D;None, redirect&#x3D;None, status&#x3D;None)) after connection broken by &#39;ProxyError (&#39;Cannot connect to proxy.&#39;, OSError (0, &#39;Error&#39;))&#39;: &#x2F;simple&#x2F;urllib&#x2F;</span><br><span class="line">WARNING: Retrying (Retry (total&#x3D;1, connect&#x3D;None, read&#x3D;None, redirect&#x3D;None, status&#x3D;None)) after connection broken by &#39;ProxyError (&#39;Cannot connect to proxy.&#39;, OSError (0, &#39;Error&#39;))&#39;: &#x2F;simple&#x2F;urllib&#x2F;</span><br><span class="line">WARNING: Retrying (Retry (total&#x3D;0, connect&#x3D;None, read&#x3D;None, redirect&#x3D;None, status&#x3D;None)) after connection broken by &#39;ProxyError (&#39;Cannot connect to proxy.&#39;, OSError (0, &#39;Error&#39;))&#39;: &#x2F;simple&#x2F;urllib&#x2F;</span><br><span class="line">ERROR: Could not find a version that satisfies the requirement urllib</span><br><span class="line">ERROR: No matching distribution found for urllib</span><br></pre></td></tr></table></figure>
 
 <p>解决方法:</p>
-<p>直接使用国内镜像源即可,输入:</p>
+<p>直接使用国内镜像源即可，输入:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install xxx - i https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple&#x2F;</span><br></pre></td></tr></table></figure>
 
-<p>xxx为你要安装的包的名字</p>
+<p>xxx 为你要安装的包的名字</p>
 
       
     </div>
@@ -260,7 +260,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
     
-        <ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Give-Python-A-Damn"><span class="nav-number">1.</span> <span class="nav-text">Give Python A Damn</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-%E5%9C%A8cmd%E8%BE%93%E5%85%A5python-%E9%81%87%E5%88%B0%E5%A6%82%E4%B8%8B%E8%AD%A6%E5%91%8A"><span class="nav-number">1.1.</span> <span class="nav-text">1.在cmd输入python,遇到如下警告:</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Give-Python-A-Damn"><span class="nav-number">1.</span> <span class="nav-text">Give Python A Damn</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-%E5%9C%A8-cmd-%E8%BE%93%E5%85%A5-python-%E9%81%87%E5%88%B0%E5%A6%82%E4%B8%8B%E8%AD%A6%E5%91%8A"><span class="nav-number">1.1.</span> <span class="nav-text">1. 在 cmd 输入 python, 遇到如下警告:</span></a></li></ol></li></ol>
     
     </div>
   </aside>

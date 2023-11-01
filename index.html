@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Wow</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  
+  <meta name="description" content="就把我偷走吧，浪漫的收藏家。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wow">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Wow">
+<meta property="og:description" content="就把我偷走吧，浪漫的收藏家。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Lxq">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Wow" type="application/atom+xml">
+  
+
+  
+
+  <link rel="icon" href="/css/images/picture3.jpg">
+  <link rel="apple-touch-icon" href="/css/images/picture3.jpg">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt; src:url("/css/fonts/FuturaPTBold.otf") format("woff");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt-light; src:url("/css/fonts/FuturaPTBook.otf") format("woff");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt-italic; src:url("/css/fonts/FuturaPTBookOblique.otf") format("woff");font-weight:400;font-style:italic;}
+}
+
+  </style>
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+  
+<script src="/js/bootstrap.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+
+  
+    <link rel="stylesheet" href="/css/home.css" >
+  
+
+  
+
+  
+
+  
+  
+  
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+
+
+  <body>
+
+
+  
+    <header id="header">
+
+	<!-- 背景图模式 -->
+	
+
+    
+      <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(); background-size: auto 100%;">
+
+      <!-- Support rolling -->  
+        
+        <section class="awSlider">
+          <div class="carousel slide carousel-fade " data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+               
+                  
+                    <div class="item active">
+                  
+                    <img id="carousel-img0" src="/css/images/picture1.jpg">
+                  </div>
+
+                  <!-- 自适应大图 -->
+                  <script>
+                      var img0 = new Image();
+                      var imageTag0 = document.getElementById("carousel-img0");
+                      img0.src = imageTag0.src;
+                      img0.onload=function(){
+                        if (img0.width / img0.height <= document.body.clientWidth / document.body.clientHeight) {
+                          imageTag0.style.width = document.body.clientWidth + "px";
+                        } else {
+                          imageTag0.style.height = document.body.clientHeight + "px";
+                          imageTag0.style.marginLeft = -(document.body.clientHeight * img0.width / img0.height - document.body.clientWidth) / 2 + "px";
+                        }
+                      };
+                  </script>
+                
+                  
+                    <div class="item">
+                  
+                    <img id="carousel-img1" src="/css/images/picture2.jpg">
+                  </div>
+
+                  <!-- 自适应大图 -->
+                  <script>
+                      var img1 = new Image();
+                      var imageTag1 = document.getElementById("carousel-img1");
+                      img1.src = imageTag1.src;
+                      img1.onload=function(){
+                        if (img1.width / img1.height <= document.body.clientWidth / document.body.clientHeight) {
+                          imageTag1.style.width = document.body.clientWidth + "px";
+                        } else {
+                          imageTag1.style.height = document.body.clientHeight + "px";
+                          imageTag1.style.marginLeft = -(document.body.clientHeight * img1.width / img1.height - document.body.clientWidth) / 2 + "px";
+                        }
+                      };
+                  </script>
+                
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Geri</span>
+            </a>
+            <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">İleri</span>
+            </a>
+          </div>
+        </section>
+        <script>
+          $('section.awSlider .carousel').carousel({
+              pause: '',
+              interval: 5000
+          });
+          var startImage = $('section.awSlider .item.active > img').attr('src');
+          $('section.awSlider .carousel').on('slid.bs.carousel', function () {
+              var bscn = $(this).find('.item.active > img').attr('src');
+              $('section.awSlider > img').attr('src', bscn);
+          });
+        </script>
+      
+
+    
+ 
+
+
+    <canvas width="100%" height="100%"></canvas>
+    <script>
+      var c = document.getElementsByTagName('canvas')[0],
+          x = c.getContext('2d'),
+          w = window.innerWidth,
+          h = window.innerHeight,
+          pr = window.devicePixelRatio || 1,
+          f = 90,
+          q,
+          m = Math,
+          r = 0,
+          u = m.PI*2,
+          v = m.cos,
+          z = m.random
+      c.width = w*pr
+      c.height = h*pr
+      x.scale(pr, pr)
+      x.globalAlpha = 0.6
+
+      <!-- 折线Polyline背景 -->
+      
+    </script>
+    
+
+    
+      <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,1);"> 
+    
+
+        
+          <div class="homelogoback"  style="border: 1px solid #404040;" >
+            <h1><a href="#content" id="logo">Wow</a></h1>
+            <h3>就把我偷走吧，浪漫的收藏家。</h3>
+            <h5>Lxq</h5>
+            <!-- <p><a href="https://github.com/iTimeTraveler" target="_blank">Github</a></p> -->
+          </div>
+        
+    
+    </div>
+  </div>
+
+  <!-- 自适应主页背景大图 -->
+  
+
+ <!-- home_logo_image居中 -->
+ 
+    <script>
+        var homelogodiv = document.getElementById("homelogo");
+        if (document.all.homelogo.offsetWidth > document.body.clientWidth) {
+          homelogodiv.style.width = document.body.clientWidth + "px";
+          homelogodiv.style.marginLeft = document.body.clientWidth * -0.5 + "px";
+        } else {
+          homelogodiv.style.width = homelogodiv.clientWidth  + "px";
+          homelogodiv.style.marginLeft = (homelogodiv.clientWidth)  * -0.5 + "px";
+        }
+    </script>
+  
+
+  <div class="intro-navigate">
+      <p class="navigater-list">
+        
+          <a id="beautifont" class="main-nav-link" href="/">首页</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/archives">归档</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/categories">分类</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/tags">标签</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/about">关于</a>
+        
+      </p>
+  </div>
+
+</header>
+  
+  <div id="container">
+    <div id="wrap">
+      
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;">
+  
+    <article id="post-数学建模记录-校赛"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2022/09/22/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E8%AE%B0%E5%BD%95-%E6%A0%A1%E8%B5%9B/">数学建模记录 - 校赛</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2022/09/22/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E8%AE%B0%E5%BD%95-%E6%A0%A1%E8%B5%9B/" class="article-date">
+	  <time datetime="2022-09-22T01:23:18.000Z" itemprop="datePublished">2022-09-22</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/%E6%95%B0%E6%A8%A1%E5%BE%80%E4%BA%8B/">数模往事</a>
+
+      
+      
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          开始的开始一切的开始是 2021.5.1-2021.5.3 的数模校赛，那可能是我除了国赛以外做得最认真的一次题，每天工作 12 个小时，早起晚睡还没有午休，但当时并不觉得累，可能是某种神奇的内驱力。
+第一次组队打数模，第一次完整地做一道数模题。当时还几乎是全宿舍出动，交完电子版我在大寝打印论文，舍友们在继续奋斗，到了凌晨三四点才睡，睡醒去办公室交纸质版，然后出校快乐左庭右院了。一起吃的有很多人，还玩了剧本杀。
+
+选题没有太多的犹豫我们就选了 A 题，或许是因为 A 题短。A 题是个疫苗生...
+        </p>
+        <p class="article-more-link">
+          <a href="/2022/09/22/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E8%AE%B0%E5%BD%95-%E6%A0%A1%E8%B5%9B/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
+    <article id="post-小林数模记"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2022/05/06/%E5%B0%8F%E6%9E%97%E6%95%B0%E6%A8%A1%E8%AE%B0/">小林数模记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2022/05/06/%E5%B0%8F%E6%9E%97%E6%95%B0%E6%A8%A1%E8%AE%B0/" class="article-date">
+	  <time datetime="2022-05-06T12:39:52.000Z" itemprop="datePublished">2022-05-06</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/%E5%B0%8F%E6%9E%97%E6%97%A5%E8%AE%B0/">小林日记</a>
+
+      
+      
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          前言本来小林日记里的东西应该是轻松欢快的，但数模带给我的东西与轻松欢快实在无关。华妃娘娘试过从天黑等到天亮，我也试过从天黑算到天亮 hhh—— 我可以这么写，可以用一种 “一切都过去了” 的心态对数模经历侃侃而谈，可以假装喜欢数模享受比赛过程，但我不想。我此生都不会再参加数模类比赛了。除了看成绩的时候，我感受不到一丝一毫乐趣。也许是过于紧张的赛程，也许是枯燥单调的暑期培训，磨灭了我对数模本就不多的热爱。但还是写写吧，用最平庸的标题最平淡的文笔，权当纪念了。
+校赛校赛是最开始的地方，也是我最...
+        </p>
+        <p class="article-more-link">
+          <a href="/2022/05/06/%E5%B0%8F%E6%9E%97%E6%95%B0%E6%A8%A1%E8%AE%B0/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
+    <article id="post-潜伏"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2021/12/14/%E6%BD%9C%E4%BC%8F/">潜伏</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2021/12/14/%E6%BD%9C%E4%BC%8F/" class="article-date">
+	  <time datetime="2021-12-14T12:52:50.000Z" itemprop="datePublished">2021-12-14</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/%E6%91%98%E5%BD%95/">摘录</a>
+
+      
+      
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          
+
+虽然我们都被叫做 “汉奸”，但你我的道路也是不同的。
+祝愿我们再抵达路的末端时，都不会后悔。
+
+
+把一切冲淡，这就是时间的魅力。
+
+
+我以为你这个年龄在官场打拼的人，只懂得通过政绩、财富、人脉慢慢往上爬…… 万万没想到，你已经会使用我党最有力的武器 —— 人民群众  了！
+我党始终代表人民的根本利益…… 也就是说，如果我们和人民保持一致，而把政敌放在人民的对立面，那么我们就已经赢了。
+人民由人组成，是人就有欲望。每个人的欲望虽然各不相同，但有其共通之处。而这共通的部分就构成了人民的欲望...
+        </p>
+        <p class="article-more-link">
+          <a href="/2021/12/14/%E6%BD%9C%E4%BC%8F/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
+    <article id="post-小林懒觉记"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2021/12/02/%E5%B0%8F%E6%9E%97%E6%87%92%E8%A7%89%E8%AE%B0/">小林懒觉记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2021/12/02/%E5%B0%8F%E6%9E%97%E6%87%92%E8%A7%89%E8%AE%B0/" class="article-date">
+	  <time datetime="2021-12-02T13:23:59.000Z" itemprop="datePublished">2021-12-02</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/%E5%B0%8F%E6%9E%97%E6%97%A5%E8%AE%B0/">小林日记</a>
+
+      
+      
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          
+周六（2021.11.27）
+睡懒觉。
+
+周日（2021.11.28）
+睡懒觉。
+
+周一（2021.11.29）
+睡懒觉。
+
+周二（2021.11.30）
+小林啊小林！你怎么能如此堕落！先前订下的学习计划你都忘了吗？
+子曰：“吾日三省吾身。”…… 不能再这样下去了！
+
+周三（2021.12.1）
+睡懒觉。
+
+周四（2021.12.2）
+睡懒觉。
+
+
+
+        </p>
+        <p class="article-more-link">
+          <a href="/2021/12/02/%E5%B0%8F%E6%9E%97%E6%87%92%E8%A7%89%E8%AE%B0/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
+    <article id="post-hello-world"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2021/11/21/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2021/11/21/hello-world/" class="article-date">
+	  <time datetime="2021-11-20T17:07:12.376Z" itemprop="datePublished">2021-11-21</time>
+	</a>
+
+      
+      
+      
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new &quot;My New...
+        </p>
+        <p class="article-more-link">
+          <a href="/2021/11/21/hello-world/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
+    <article id="post-别放弃表达"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2021/05/16/%E5%88%AB%E6%94%BE%E5%BC%83%E8%A1%A8%E8%BE%BE/">别放弃表达</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2021/05/16/%E5%88%AB%E6%94%BE%E5%BC%83%E8%A1%A8%E8%BE%BE/" class="article-date">
+	  <time datetime="2021-05-16T11:50:06.000Z" itemprop="datePublished">2021-05-16</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/%E6%91%98%E5%BD%95/">摘录</a>
+
+      
+      
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          
+可自从人类学会相爱的那一刻起，我们因为彼此的存在而获得了意义。你一定能成为你想成为的人。 ㅤ    ㅤ    ㅤ    ㅤ    ㅤ    ㅤ    ㅤ    ㅤ    ㅤ    ㅤ    ㅤ    ㅤ   ㅤ   ——《芸芸众生》姜云升
+
+很高兴让我今生能遇见你。
+过度被爱和索取是隐藏起的凶器。
+任时光匆匆流去，我只在乎你。
+ ㅤ    ㅤ    ㅤ    ㅤ    ㅤ    ㅤ    ㅤ    ㅤ    ㅤ    ㅤ    ㅤ    ㅤ   ㅤ      ——《返老还童》圣代
+
+宇宙...
+        </p>
+        <p class="article-more-link">
+          <a href="/2021/05/16/%E5%88%AB%E6%94%BE%E5%BC%83%E8%A1%A8%E8%BE%BE/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
+    <article id="post-灰色预测"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2021/04/19/%E7%81%B0%E8%89%B2%E9%A2%84%E6%B5%8B/">灰色预测</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2021/04/19/%E7%81%B0%E8%89%B2%E9%A2%84%E6%B5%8B/" class="article-date">
+	  <time datetime="2021-04-19T15:05:41.000Z" itemprop="datePublished">2021-04-19</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/%E6%95%B0%E5%AD%A6%E6%A8%A1%E5%9E%8B/">数学模型</a>
+
+      
+      
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          灰色模型 GM定义灰色系统：系统内部信息和特性是部分已知的，另一部分是未知的。
+建模步骤1. 数据的检验与处理设原始数据列为 $x^{(0)}=(x^{(0)}(1),x^{(0)}(2),…,x^{(0)}(n)$
+计算数列的级比为$$\sigma (k)=\frac {x^{(0)}(k-1)}{x^{(0)}(k)}\quad (k=2,3,…,n)$$如果所有的级比 $\sigma$($k$) 都落在可容覆盖 $X=(e^{-\frac {2}{n+1}},e^{\frac {2}...
+        </p>
+        <p class="article-more-link">
+          <a href="/2021/04/19/%E7%81%B0%E8%89%B2%E9%A2%84%E6%B5%8B/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
+    <article id="post-Give-Python-A-Damn"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2021/04/19/Give-Python-A-Damn/">Give Python A Damn</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2021/04/19/Give-Python-A-Damn/" class="article-date">
+	  <time datetime="2021-04-19T02:42:52.000Z" itemprop="datePublished">2021-04-19</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/Python/">Python</a>
+
+      
+      
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          Give Python A Damn1. 在 cmd 输入 python, 遇到如下警告:12Warning:This Python interpreter is in a conda environment, but the environment has not been activated.  Libraries may fail to load.  To activate this environment please see https:&#x2F;&#x2F;conda.io&...
+        </p>
+        <p class="article-more-link">
+          <a href="/2021/04/19/Give-Python-A-Damn/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
+    <article id="post-matlab-tips"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2021/04/18/matlab-tips/">matlab tips</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2021/04/18/matlab-tips/" class="article-date">
+	  <time datetime="2021-04-18T15:26:53.000Z" itemprop="datePublished">2021-04-18</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/matlab/">matlab</a>
+
+      
+      
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          Matlab Tips1. 数组1.1 等差、等比数组
+等差数组 ：linspace (start_var,stop_var,n)        
+
+等比数组：logspace (start_var,stop_var,n) 
+
+
+1.2 三维数组
+连接数组：cat (dim,A1,A2,A3,……)
+
+复制数组：repmat (A,[m,n,p…])
+
+重塑数组：reshape (A,[m,n,p…])   (按列排)
+
+
+1.3 低维标准数组
+全零矩阵：zeros (m,n)
+
+全一矩阵...
+        </p>
+        <p class="article-more-link">
+          <a href="/2021/04/18/matlab-tips/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
+    <article id="post-R-Day-1"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2021/03/12/R-Day-1/">R Day 1</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2021/03/12/R-Day-1/" class="article-date">
+	  <time datetime="2021-03-12T13:20:01.000Z" itemprop="datePublished">2021-03-12</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/R/">R</a>
+
+      
+      
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          Preparation
+B 站 R 语言基础教程 6 讲 https://www.bilibili.com/video/BV1ss411C7gi?from=search&amp;seid=343155182399117967 共 168 分钟 二倍速食用效果最佳 可在两小时内快速入门
+R&amp;RStudio 下载参考 &lt; https://www.jianshu.com/p/1a0f25086e8b&gt; R 大约 80M RStudio 大约 200M 
+擅用 R 自带的 he...
+        </p>
+        <p class="article-more-link">
+          <a href="/2021/03/12/R-Day-1/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
+  </nav>
+
+</section>
+        
+      </div>
+      
+        <div align="center" style="margin-top: 30px;"><hr class="hr" style="margin:0px; height:3px;"></div>
+      
+      <footer id="footer">
+  
+
+  <div class="container">
+      	<div class="row">
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+	      <p id="copyRightEn">Copyright &copy; 2013 - 2023 Wow All Rights Reserved.</p>
+	      
+	      
+  		   	<p id="copyRightCn">Lxq 保留所有权利</p>
+  		   
+		</div>
+
+		
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/scripts.js"></script>
+
+
+
+  
+<script src="/js/home.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+	<div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+
+
+
+
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">设置</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            您已调整页面字体大小
+          </div>
+        </div>
+      
+
+
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭 
+          </div>
+        </div>
+
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            Wow
+          </div>
+          <div class="panel-body">
+            Copyright © 2023 Lxq All Rights Reserved.
+          </div>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+</body>
+</html>

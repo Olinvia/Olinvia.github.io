@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>数学建模记录 - 校赛 | Wow</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="数学建模" />
+  
+  
+  
+  
+  <meta name="description" content="开始的开始一切的开始是 2021.5.1-2021.5.3 的数模校赛，那可能是我除了国赛以外做得最认真的一次题，每天工作 12 个小时，早起晚睡还没有午休，但当时并不觉得累，可能是某种神奇的内驱力。 第一次组队打数模，第一次完整地做一道数模题。当时还几乎是全宿舍出动，交完电子版我在大寝打印论文，舍友们在继续奋斗，到了凌晨三四点才睡，睡醒去办公室交纸质版，然后出校快乐左庭右院了。一起吃的有很多人，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数学建模记录 - 校赛">
+<meta property="og:url" content="http://example.com/2022/09/22/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E8%AE%B0%E5%BD%95-%E6%A0%A1%E8%B5%9B/index.html">
+<meta property="og:site_name" content="Wow">
+<meta property="og:description" content="开始的开始一切的开始是 2021.5.1-2021.5.3 的数模校赛，那可能是我除了国赛以外做得最认真的一次题，每天工作 12 个小时，早起晚睡还没有午休，但当时并不觉得累，可能是某种神奇的内驱力。 第一次组队打数模，第一次完整地做一道数模题。当时还几乎是全宿舍出动，交完电子版我在大寝打印论文，舍友们在继续奋斗，到了凌晨三四点才睡，睡醒去办公室交纸质版，然后出校快乐左庭右院了。一起吃的有很多人，">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2022/09/22/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E8%AE%B0%E5%BD%95-%E6%A0%A1%E8%B5%9B/1.png">
+<meta property="article:published_time" content="2022-09-22T01:23:18.000Z">
+<meta property="article:modified_time" content="2022-09-22T02:37:02.182Z">
+<meta property="article:author" content="Lxq">
+<meta property="article:tag" content="数学建模">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/09/22/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E8%AE%B0%E5%BD%95-%E6%A0%A1%E8%B5%9B/1.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Wow" type="application/atom+xml">
+  
+
+  
+
+  <link rel="icon" href="/css/images/picture3.jpg">
+  <link rel="apple-touch-icon" href="/css/images/picture3.jpg">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt; src:url("/css/fonts/FuturaPTBold.otf") format("woff");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt-light; src:url("/css/fonts/FuturaPTBook.otf") format("woff");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt-italic; src:url("/css/fonts/FuturaPTBookOblique.otf") format("woff");font-weight:400;font-style:italic;}
+}
+
+  </style>
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+  
+<script src="/js/bootstrap.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+
+  
+    
+<link rel="stylesheet" href="/css/dialog.css">
+
+  
+
+  
+
+  
+    <link rel="stylesheet" href="/css/header-post.css" >
+  
+
+  
+  
+  
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+  <div id="container">
+    <div id="wrap">
+      
+        <header>
+
+    <div id="allheader" class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-inner">
+          
+          <div class="container"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            
+              <a class="brand" style="border-width: 0;">
+                <p>Wow</p>
+              </a>
+            
+            
+            <div class="navbar-collapse collapse">
+              <ul class="hnav navbar-nav">
+                
+                  <li> <a class="main-nav-link" href="/">首页</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/archives">归档</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/categories">分类</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/tags">标签</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/about">关于</a> </li>
+                
+                  <li><div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(无标题)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div></li>
+            </div>
+          </div>
+                
+      </div>
+    </div>
+
+</header>
+
+
+
+      
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-数学建模记录-校赛" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      数学建模记录 - 校赛
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2022/09/22/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E8%AE%B0%E5%BD%95-%E6%A0%A1%E8%B5%9B/" class="article-date">
+	  <time datetime="2022-09-22T01:23:18.000Z" itemprop="datePublished">2022-09-22</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/%E6%95%B0%E6%A8%A1%E5%BE%80%E4%BA%8B/">数模往事</a>
+
+      
+      
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="开始的开始"><a href="#开始的开始" class="headerlink" title="开始的开始"></a>开始的开始</h3><p>一切的开始是 2021.5.1-2021.5.3 的数模校赛，那可能是我除了国赛以外做得最认真的一次题，每天工作 12 个小时，早起晚睡还没有午休，但当时并不觉得累，可能是某种神奇的内驱力。</p>
+<p>第一次组队打数模，第一次完整地做一道数模题。当时还几乎是全宿舍出动，交完电子版我在大寝打印论文，舍友们在继续奋斗，到了凌晨三四点才睡，睡醒去办公室交纸质版，然后出校快乐左庭右院了。一起吃的有很多人，还玩了剧本杀。</p>
+<p><img src="/2022/09/22/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E8%AE%B0%E5%BD%95-%E6%A0%A1%E8%B5%9B/1.png" alt="到此一游" title="到此一游"></p>
+<h3 id="选题"><a href="#选题" class="headerlink" title="选题"></a>选题</h3><p>没有太多的犹豫我们就选了 A 题，或许是因为 A 题短。A 题是个疫苗生产问题，本质是个经典的作业车间调度问题。题目如下：</p>
+<blockquote>
+<p>新冠肺炎肆虐全球，给世界带来了深重的灾难。各国为控制疫情纷纷研发新冠疫苗。假定疫苗生产需要经过 CJ1 工位、CJ2 工位、CJ3 工位以及 CJ4 工位等 4 个工艺流程。每个工艺流程一次性均能处理 100 剂疫苗，这 100 剂疫苗装进一个加工箱一起送进工位的设备进行处理。而且，只有按照 CJ1-CJ2-CJ3-CJ4 的顺序在 4 个工位都进行了加工以后，才算完成生产。为防止疫苗包装出现混乱，某疫苗生产公司生产部门规定，每个工位不能同时生产不同类型的疫苗，疫苗生产不允许插队，即进入第一个工位安排的每类疫苗的生产顺序一旦确定就要一直保持不变，而且前一种类型的疫苗离开某个工位后，后一种类型的疫苗才能进入这个工位。</p>
+<p>现有 YM1-YM10 等 10 种不同类型的疫苗需要生产。为安全起见，每种类型每箱（内装疫苗 100 剂）疫苗在每个工位上均进行了 50 次模拟生产。发现，由于生产设备、疫苗纯化等多种原因，每个工位生产不同类型的每箱疫苗所需的时间并不稳定，详细的数据见附件 1。</p>
+<p>请建立数学模型，回答下列问题: </p>
+<p>** 问题 1：** 请对每箱疫苗在所有工位上的生产时间进行均值、方差、最值、概率分布等统计分析，以方便疫苗生产公司管理者能够直观的掌握每个工位生产疫苗的能力水平，为疫苗生产提供参考。</p>
+<p>** 问题 2：** 某国疫苗检测部门紧急需要 YM1-YM10 各 100 剂疫苗进行检测。为赶时间，疫苗生产公司需要对疫苗的生产顺序进行规划，以便能在最短时间内交付，以每个工位生产每箱疫苗平均时间为依据。请建立数学模型，制定疫苗生产顺序，初始时刻为 00:00，计算生产总时间，并将结果填入表 1。</p>
+<p>** 问题 3：** 在实际生产中，每个工位生产每种疫苗的所需时间具有随机性。如果要求该公司疫苗交货总时间比问题 2 的总时间缩短 5%，请建立数学模型，以最大的概率完成这个任务为目标，确定生产顺序，并给出缩短的时间比例与最大概率之间的关系。</p>
+<p>** 问题 4：** 现在该疫苗生产公司接收了 10 种类型疫苗不同规模的生产任务（见附件 2）。由于生产机器需要检修和维护，每个工位每天生产的时间不能超过 16 小时。为避免疫苗错误包装，要求每种类型疫苗的生产任务不可以拆分，即同种类型疫苗生产全部完成之后才能生产另外类型的疫苗。请建立数学模型，在可靠性为 90% 的前提下安排生产方案，至少多少天可以完成任务？</p>
+<p>** 问题 5：** 如果该疫苗生产公司计划在 100 天内选择部分数量的疫苗进行生产，每个工位每天生产的时间不能超过 16 小时，每种类型疫苗的生产任务可以适当拆分，即每种类型的疫苗可以只完成一部分。以最大销售额为目标，请建立数学模型安排生产计划。</p>
+</blockquote>
+<p>问题 1 是个概率统计问题。</p>
+<p>问题 2 我们建立了基于 Johnson 法则的流水调度问题。（这个是真的做出来了）</p>
+<p>问题 3 我们建立了随即加工时间的生产总时间概率模型。（蒙的）</p>
+<p>问题 4 我们建立了基于分治算法的平行顺序按批生产模型。（天可怜见，我那时根本不知道啥是分治算法）</p>
+<p>问题 5 我们建立了基于利润最大化的多元非线性回归模型。（建模手一个人搞定的）</p>
+<h3 id="问题-1"><a href="#问题-1" class="headerlink" title="问题 1"></a>问题 1</h3><p>针对问题 1，直接计算每箱疫苗在所有工位上生产时间的均值、方差、最大值、最小值，并进行一些统计分析。</p>
+<h3 id="问题-2"><a href="#问题-2" class="headerlink" title="问题 2"></a>问题 2</h3><p>针对问题 2，剔除无关因素后问题转换为生产顺序对生产时间的影响。</p>
+<p>根据疫苗进入机器的时间，既不会早于该机器将上一种疫苗加工完毕的时间，也不会早于该疫苗在上一个机器加工完成的时间，可得出生产总时间的递推表达式。将问题分解为两种相邻疫苗的排序问题，即可得出最优的排序和最短生产时间。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/" rel="tag">数学建模</a></li></ul>
+
+      
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2022/05/06/%E5%B0%8F%E6%9E%97%E6%95%B0%E6%A8%A1%E8%AE%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">小林数模记</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="toc-sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%80%E5%A7%8B%E7%9A%84%E5%BC%80%E5%A7%8B"><span class="nav-number">1.</span> <span class="nav-text">开始的开始</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%89%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">选题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%98-1"><span class="nav-number">3.</span> <span class="nav-text">问题 1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%98-2"><span class="nav-number">4.</span> <span class="nav-text">问题 2</span></a></li></ol>
+    
+    </div>
+  </aside>
+
+</section>
+        
+      </div>
+      
+      <footer id="footer">
+  
+
+  <div class="container">
+      	<div class="row">
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+	      <p id="copyRightEn">Copyright &copy; 2013 - 2023 Wow All Rights Reserved.</p>
+	      
+	      
+  		   	<p id="copyRightCn">Lxq 保留所有权利</p>
+  		   
+		</div>
+
+		
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/scripts.js"></script>
+
+
+
+
+
+  
+<script src="/js/dialog.js"></script>
+
+
+
+
+
+
+
+
+
+	<div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+
+
+
+
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">设置</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            您已调整页面字体大小
+          </div>
+        </div>
+      
+
+
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭 
+          </div>
+        </div>
+
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            Wow
+          </div>
+          <div class="panel-body">
+            Copyright © 2023 Lxq All Rights Reserved.
+          </div>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
+  
+</body>
+</html>

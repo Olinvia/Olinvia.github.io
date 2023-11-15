@@ -3,25 +3,25 @@
 <head>
   <meta charset="utf-8">
   
-  <title>《java 编程的逻辑》第 1 章 | Wow</title>
+  <title>《java 编程的逻辑》第 2 章 | Wow</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="keywords" content="Java编程基础" />
+  <meta name="keywords" content="二进制" />
   
   
   
   
-  <meta name="description" content="编程基础数据类型和变量操作系统将时间分成很多细小的时间片，一个时间片给一个程序用，并且频繁地在程序间切换，给程序造成整个机器资源都归它使用的错觉。 声明一个变量，如 int a，其实就是在内存中分配了一块空间，这块空间存放 int 数据类型，a 指向这块内存空间所在的位置，通过对 a 操作即可操作 a 指向的内存空间。 赋值整型常量默认为 int 类型，所以 long 类型赋值为： 1long a">
+  <meta name="description" content="理解数据背后的二进制整数二进制补码 &#x3D; 原码取反 + 1。 二进制：0b11001；十六进制：0x7B。 小数二进制小数精度不准。 如果需要比较高的精度，可以先把小数转成整数，运算结束后再转回小数；或者，使用 BigDecimal 类。 float：32 位，1 位表示符号，23 位表示尾数，8 位表示指数。$m*(2^e)$ 中，$m$ 为尾数，$e$ 为指数。 字符的编码与乱码非 Unicod">
 <meta property="og:type" content="article">
-<meta property="og:title" content="《Java 编程的逻辑》第 1 章">
-<meta property="og:url" content="http://example.com/2023/11/14/%E3%80%8AJava%E7%BC%96%E7%A8%8B%E7%9A%84%E9%80%BB%E8%BE%91%E3%80%8B%E7%AC%AC1%E7%AB%A0/index.html">
+<meta property="og:title" content="《Java 编程的逻辑》第 2 章">
+<meta property="og:url" content="http://example.com/2023/11/15/%E3%80%8AJava%E7%BC%96%E7%A8%8B%E7%9A%84%E9%80%BB%E8%BE%91%E3%80%8B%E7%AC%AC2%E7%AB%A0/index.html">
 <meta property="og:site_name" content="Wow">
-<meta property="og:description" content="编程基础数据类型和变量操作系统将时间分成很多细小的时间片，一个时间片给一个程序用，并且频繁地在程序间切换，给程序造成整个机器资源都归它使用的错觉。 声明一个变量，如 int a，其实就是在内存中分配了一块空间，这块空间存放 int 数据类型，a 指向这块内存空间所在的位置，通过对 a 操作即可操作 a 指向的内存空间。 赋值整型常量默认为 int 类型，所以 long 类型赋值为： 1long a">
+<meta property="og:description" content="理解数据背后的二进制整数二进制补码 &#x3D; 原码取反 + 1。 二进制：0b11001；十六进制：0x7B。 小数二进制小数精度不准。 如果需要比较高的精度，可以先把小数转成整数，运算结束后再转回小数；或者，使用 BigDecimal 类。 float：32 位，1 位表示符号，23 位表示尾数，8 位表示指数。$m*(2^e)$ 中，$m$ 为尾数，$e$ 为指数。 字符的编码与乱码非 Unicod">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-11-14T11:43:51.000Z">
-<meta property="article:modified_time" content="2023-11-14T12:56:11.700Z">
+<meta property="article:published_time" content="2023-11-15T07:46:18.000Z">
+<meta property="article:modified_time" content="2023-11-15T08:38:34.843Z">
 <meta property="article:author" content="Lxq">
-<meta property="article:tag" content="Java编程基础">
+<meta property="article:tag" content="二进制">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Wow" type="application/atom+xml">
@@ -170,7 +170,7 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-《Java编程的逻辑》第1章" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-《Java编程的逻辑》第2章" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     
     
@@ -178,7 +178,7 @@
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      《Java 编程的逻辑》第 1 章
+      《Java 编程的逻辑》第 2 章
     </h1>
   
 
@@ -186,8 +186,8 @@
     
     <div class="article-meta">
       
-	<a href="/2023/11/14/%E3%80%8AJava%E7%BC%96%E7%A8%8B%E7%9A%84%E9%80%BB%E8%BE%91%E3%80%8B%E7%AC%AC1%E7%AB%A0/" class="article-date">
-	  <time datetime="2023-11-14T11:43:51.000Z" itemprop="datePublished">2023-11-14</time>
+	<a href="/2023/11/15/%E3%80%8AJava%E7%BC%96%E7%A8%8B%E7%9A%84%E9%80%BB%E8%BE%91%E3%80%8B%E7%AC%AC2%E7%AB%A0/" class="article-date">
+	  <time datetime="2023-11-15T07:46:18.000Z" itemprop="datePublished">2023-11-15</time>
 	</a>
 
       
@@ -199,34 +199,38 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="编程基础"><a href="#编程基础" class="headerlink" title="编程基础"></a>编程基础</h2><h3 id="数据类型和变量"><a href="#数据类型和变量" class="headerlink" title="数据类型和变量"></a>数据类型和变量</h3><p>操作系统将时间分成很多细小的时间片，一个时间片给一个程序用，并且频繁地在程序间切换，给程序造成整个机器资源都归它使用的错觉。</p>
-<p>声明一个变量，如 int a，其实就是在内存中分配了一块空间，这块空间存放 int 数据类型，a 指向这块内存空间所在的位置，通过对 a 操作即可操作 a 指向的内存空间。</p>
-<h3 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h3><p>整型常量默认为 int 类型，所以 long 类型赋值为：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">long</span> a = <span class="number">53675276258L</span></span><br></pre></td></tr></table></figure>
+        <h2 id="理解数据背后的二进制"><a href="#理解数据背后的二进制" class="headerlink" title="理解数据背后的二进制"></a>理解数据背后的二进制</h2><h3 id="整数二进制"><a href="#整数二进制" class="headerlink" title="整数二进制"></a>整数二进制</h3><p>补码 = 原码取反 + 1。</p>
+<p>二进制：0b11001；十六进制：0x7B。</p>
+<h3 id="小数二进制"><a href="#小数二进制" class="headerlink" title="小数二进制"></a>小数二进制</h3><p>小数精度不准。</p>
+<p>如果需要比较高的精度，可以先把小数转成整数，运算结束后再转回小数；或者，使用 BigDecimal 类。</p>
+<p>float：32 位，1 位表示符号，23 位表示尾数，8 位表示指数。$m*(2^e)$ 中，$m$ 为尾数，$e$ 为指数。</p>
+<h3 id="字符的编码与乱码"><a href="#字符的编码与乱码" class="headerlink" title="字符的编码与乱码"></a>字符的编码与乱码</h3><p>非 Unicode 编码：</p>
+<ul>
+<li><p>GB2312 使用两个字节表示汉字，且两个字节的最高位都为 1。（最高位 0 被认为是 ASCII 字符）</p>
+</li>
+<li><p>GBK 解析时，如果第一个字节的最高位为 1，那么就将下一个字节读进来一起解析为一个汉字。</p>
+</li>
+</ul>
+<p>Unicode 编码：</p>
+<ul>
+<li><p>Unicode 给所有字符分配了唯一的数字编号。</p>
+</li>
+<li><p>UTF-8 使用变长字节表示。大部分中文字符需要 3 个字节表示。</p>
+</li>
+</ul>
+<p>编码转换改变了字符的二进制内容，但并没有改变字符看上去的样子。</p>
+<p>乱码的原因：</p>
+<ul>
+<li>解析错误（切换一下编码解析方式即可）</li>
+<li>解析错误 + 编码转换错误（比较复杂）<ul>
+<li>诊断最开始的编码格式</li>
+<li>JAVA 解决</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">byte</span>[] getBytes (String charsetName): 获取一个字符串的给定编码的二进制形式；</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">String</span><span class="params">(<span class="keyword">byte</span> bytes [],String charsetName)</span>: 以给定的二进制数组 bytes 按照编码格式 charsetName 解读为一个字符串。</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">String str </span>= <span class="string">&quot; 一串乱码 & quot;</span></span><br><span class="line">String newStr = <span class="keyword">new</span> String (str.getBytes (<span class="string">&quot;windows-1252&quot;</span>),<span class="string">&quot;GB18030&quot;</span>);</span><br><span class="line"><span class="comment">// 首先用 windows-1252 格式读，然后用 GB18030 格式解析。</span></span><br></pre></td></tr></table></figure>
 
-<p>小数常量默认是 double 类型，所以 float 类型赋值为：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">float</span> f = <span class="number">33.3f</span></span><br></pre></td></tr></table></figure>
-
-<p>数组的赋值：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] arr = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line"><span class="keyword">int</span>[] arr = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line"><span class="keyword">int</span>[] arr = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">3</span>];</span><br><span class="line">arr [<span class="number">0</span>]=<span class="number">1</span>;arr [<span class="number">1</span>]=<span class="number">2</span>;arr [<span class="number">2</span>]=<span class="number">3</span>;</span><br></pre></td></tr></table></figure>
-
-<p>如果不赋值，默认数值型为 0，char 型为空字符，boolean 型为 false。</p>
-<p>给数组中元素赋值是改变数组内容，给数组变量赋值会让变量指向一个不同的位置。</p>
-<h3 id="基本运算"><a href="#基本运算" class="headerlink" title="基本运算"></a>基本运算</h3><p>对于数组，== 判断的是两个变量指向的是不是同一个数组，而不是两个数组的元素内容是否一样。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] a= <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line"><span class="keyword">int</span>[] b= <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">System.out.println (a==b);</span><br><span class="line"><span class="keyword">false</span></span><br></pre></td></tr></table></figure>
-
-<p>与（&amp;）和短路与（&amp;&amp;）。</p>
-<h3 id="条件执行"><a href="#条件执行" class="headerlink" title="条件执行"></a>条件执行</h3><p>if 语句和跳转指令有关（修改指令指示器的值）；</p>
-<p>switch 语句可能会使用跳转表（自动排序然后二分查找，或者直接哈希查找）。</p>
-<h3 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h3><p>foreach 语句：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] arr = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> element:arr)&#123;</span><br><span class="line">    System.out.println (element);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>static 使得语法结构不再与对象实例相关，而是属于类本身，从而可以在不创建对象的情况下进行访问和调用。</p>
-<p>不特别区分函数和方法。</p>
-<p>Java 中修改函数形参中的数组，会真的修改到实参的数组。因为数组是引用类型。</p>
-<p>Java 返回值最多只有一个，但一个也足够了。</p>
-<p>栈底的内存地址是最高的，栈顶的是最低的。</p>
-<p>函数调用通过栈来存储相关数据，递归过多会导致栈溢出。</p>
+<h3 id="char-的真正含义"><a href="#char-的真正含义" class="headerlink" title="char 的真正含义"></a>char 的真正含义</h3><p>char 的本质是一个固定占用两个字节的无符号正整数，这个正整数对应于 Unicode 编号。</p>
 
       
     </div>
@@ -236,7 +240,7 @@
       
       
         
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/" rel="tag">Java编程基础</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6/" rel="tag">二进制</a></li></ul>
 
       
 
@@ -246,19 +250,19 @@
     
 <nav id="article-nav">
   
-    <a href="/2023/11/15/%E3%80%8AJava%E7%BC%96%E7%A8%8B%E7%9A%84%E9%80%BB%E8%BE%91%E3%80%8B%E7%AC%AC2%E7%AB%A0/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2023/11/15/%E3%80%8AJava%E7%BC%96%E7%A8%8B%E7%9A%84%E9%80%BB%E8%BE%91%E3%80%8B%E7%AC%AC3%E7%AB%A0/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">上一篇</strong>
       <div class="article-nav-title">
         
-          《Java 编程的逻辑》第 2 章
+          《Java 编程的逻辑》第 3 章
         
       </div>
     </a>
   
   
-    <a href="/2022/09/22/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E8%AE%B0%E5%BD%95-%E6%A0%A1%E8%B5%9B/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2023/11/14/%E3%80%8AJava%E7%BC%96%E7%A8%8B%E7%9A%84%E9%80%BB%E8%BE%91%E3%80%8B%E7%AC%AC1%E7%AB%A0/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">数学建模记录 - 校赛</div>
+      <div class="article-nav-title">《Java 编程的逻辑》第 1 章</div>
     </a>
   
 </nav>
@@ -272,7 +276,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
     
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80"><span class="nav-number">1.</span> <span class="nav-text">编程基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%8F%98%E9%87%8F"><span class="nav-number">1.1.</span> <span class="nav-text">数据类型和变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B5%8B%E5%80%BC"><span class="nav-number">1.2.</span> <span class="nav-text">赋值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97"><span class="nav-number">1.3.</span> <span class="nav-text">基本运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9D%A1%E4%BB%B6%E6%89%A7%E8%A1%8C"><span class="nav-number">1.4.</span> <span class="nav-text">条件执行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BE%AA%E7%8E%AF"><span class="nav-number">1.5.</span> <span class="nav-text">循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%BD%E6%95%B0"><span class="nav-number">1.6.</span> <span class="nav-text">函数</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%90%86%E8%A7%A3%E6%95%B0%E6%8D%AE%E8%83%8C%E5%90%8E%E7%9A%84%E4%BA%8C%E8%BF%9B%E5%88%B6"><span class="nav-number">1.</span> <span class="nav-text">理解数据背后的二进制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B4%E6%95%B0%E4%BA%8C%E8%BF%9B%E5%88%B6"><span class="nav-number">1.1.</span> <span class="nav-text">整数二进制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%8F%E6%95%B0%E4%BA%8C%E8%BF%9B%E5%88%B6"><span class="nav-number">1.2.</span> <span class="nav-text">小数二进制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E7%9A%84%E7%BC%96%E7%A0%81%E4%B8%8E%E4%B9%B1%E7%A0%81"><span class="nav-number">1.3.</span> <span class="nav-text">字符的编码与乱码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#char-%E7%9A%84%E7%9C%9F%E6%AD%A3%E5%90%AB%E4%B9%89"><span class="nav-number">1.4.</span> <span class="nav-text">char 的真正含义</span></a></li></ol></li></ol>
     
     </div>
   </aside>

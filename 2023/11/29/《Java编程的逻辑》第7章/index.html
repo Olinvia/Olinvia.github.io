@@ -3,25 +3,25 @@
 <head>
   <meta charset="utf-8">
   
-  <title>《java 编程的逻辑》第 6 章 | Wow</title>
+  <title>《java 编程的逻辑》第 7 章 | Wow</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="keywords" content="Java异常" />
+  <meta name="keywords" content="Java常用基础类" />
   
   
   
   
-  <meta name="description" content="异常基类：Throwable 两个字类：Error 和 Exception try-with-resources 针对实现 java.lang.AutoCloseable 接口对象。 受检异常必须出现在 throws 语句中，调用者必须处理。">
+  <meta name="description" content="常用基础类包装类包装类与基础类的转换： 1234567int i1 &#x3D; 12345;Integer iObj &#x3D; Integer.valueOf (i1);int i2 &#x3D; iObj.intValue ();&#x2F;&#x2F; 自动装箱 &#x2F; 拆箱 Integer a &#x3D; 100;int b &#x3D; a;  包装类都是不可变类。 String 类可以直接用 +。 看似在修改，其实创建了新对象。 如果频繁地修改 Str">
 <meta property="og:type" content="article">
-<meta property="og:title" content="《Java 编程的逻辑》第 6 章">
-<meta property="og:url" content="http://example.com/2023/11/28/%E3%80%8AJava%E7%BC%96%E7%A8%8B%E7%9A%84%E9%80%BB%E8%BE%91%E3%80%8B%E7%AC%AC6%E7%AB%A0/index.html">
+<meta property="og:title" content="《Java 编程的逻辑》第 7 章">
+<meta property="og:url" content="http://example.com/2023/11/29/%E3%80%8AJava%E7%BC%96%E7%A8%8B%E7%9A%84%E9%80%BB%E8%BE%91%E3%80%8B%E7%AC%AC7%E7%AB%A0/index.html">
 <meta property="og:site_name" content="Wow">
-<meta property="og:description" content="异常基类：Throwable 两个字类：Error 和 Exception try-with-resources 针对实现 java.lang.AutoCloseable 接口对象。 受检异常必须出现在 throws 语句中，调用者必须处理。">
+<meta property="og:description" content="常用基础类包装类包装类与基础类的转换： 1234567int i1 &#x3D; 12345;Integer iObj &#x3D; Integer.valueOf (i1);int i2 &#x3D; iObj.intValue ();&#x2F;&#x2F; 自动装箱 &#x2F; 拆箱 Integer a &#x3D; 100;int b &#x3D; a;  包装类都是不可变类。 String 类可以直接用 +。 看似在修改，其实创建了新对象。 如果频繁地修改 Str">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-11-28T11:05:08.000Z">
-<meta property="article:modified_time" content="2023-11-28T11:22:25.119Z">
+<meta property="article:published_time" content="2023-11-29T07:32:09.000Z">
+<meta property="article:modified_time" content="2023-11-29T09:17:22.478Z">
 <meta property="article:author" content="Lxq">
-<meta property="article:tag" content="Java异常">
+<meta property="article:tag" content="Java常用基础类">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Wow" type="application/atom+xml">
@@ -170,7 +170,7 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-《Java编程的逻辑》第6章" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-《Java编程的逻辑》第7章" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     
     
@@ -178,7 +178,7 @@
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      《Java 编程的逻辑》第 6 章
+      《Java 编程的逻辑》第 7 章
     </h1>
   
 
@@ -186,8 +186,8 @@
     
     <div class="article-meta">
       
-	<a href="/2023/11/28/%E3%80%8AJava%E7%BC%96%E7%A8%8B%E7%9A%84%E9%80%BB%E8%BE%91%E3%80%8B%E7%AC%AC6%E7%AB%A0/" class="article-date">
-	  <time datetime="2023-11-28T11:05:08.000Z" itemprop="datePublished">2023-11-28</time>
+	<a href="/2023/11/29/%E3%80%8AJava%E7%BC%96%E7%A8%8B%E7%9A%84%E9%80%BB%E8%BE%91%E3%80%8B%E7%AC%AC7%E7%AB%A0/" class="article-date">
+	  <time datetime="2023-11-29T07:32:09.000Z" itemprop="datePublished">2023-11-29</time>
 	</a>
 
       
@@ -199,10 +199,20 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h2><p>基类：Throwable</p>
-<p>两个字类：Error 和 Exception</p>
-<p>try-with-resources 针对实现 java.lang.AutoCloseable 接口对象。</p>
-<p>受检异常必须出现在 throws 语句中，调用者必须处理。</p>
+        <h2 id="常用基础类"><a href="#常用基础类" class="headerlink" title="常用基础类"></a>常用基础类</h2><h3 id="包装类"><a href="#包装类" class="headerlink" title="包装类"></a>包装类</h3><p>包装类与基础类的转换：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i1 = <span class="number">12345</span>;</span><br><span class="line">Integer iObj = Integer.valueOf (i1);</span><br><span class="line"><span class="keyword">int</span> i2 = iObj.intValue ();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 自动装箱 / 拆箱 </span></span><br><span class="line">Integer a = <span class="number">100</span>;</span><br><span class="line"><span class="keyword">int</span> b = a;</span><br></pre></td></tr></table></figure>
+
+<p>包装类都是不可变类。</p>
+<h3 id="String-类"><a href="#String-类" class="headerlink" title="String 类"></a>String 类</h3><p>可以直接用 +。</p>
+<p>看似在修改，其实创建了新对象。</p>
+<p>如果频繁地修改 String 内容，应该考虑 StringBuilder 和 StringBuffer。</p>
+<p>如果只是内容相同而地址不同，== 会返回 false。</p>
+<h3 id="Array-类"><a href="#Array-类" class="headerlink" title="Array 类"></a>Array 类</h3><p>可以使用 Arrays.toString (arr) 来输出 arr 的各个元素。</p>
+<p>创建多维数组时，第一维的长度可以指定，其他维不需要指定。</p>
+<p>sort 采用的是双枢轴快速排序（基本类型）和 TimSort（对象）。</p>
+<h3 id="Date-类"><a href="#Date-类" class="headerlink" title="Date 类"></a>Date 类</h3><p>计算机系统内部用一个整数表示时刻，是距离格林尼治标准时间 1970 年 1 月 1 日 0 时 0 分 0 秒的毫秒数。</p>
+<h3 id="Random-类"><a href="#Random-类" class="headerlink" title="Random 类"></a>Random 类</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Random rnd = <span class="keyword">new</span> Random ();</span><br><span class="line">rnd.nextInt (<span class="number">10</span>);</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
@@ -212,7 +222,7 @@
       
       
         
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java%E5%BC%82%E5%B8%B8/" rel="tag">Java异常</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java%E5%B8%B8%E7%94%A8%E5%9F%BA%E7%A1%80%E7%B1%BB/" rel="tag">Java常用基础类</a></li></ul>
 
       
 
@@ -222,19 +232,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2023/11/29/%E3%80%8AJava%E7%BC%96%E7%A8%8B%E7%9A%84%E9%80%BB%E8%BE%91%E3%80%8B%E7%AC%AC7%E7%AB%A0/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">上一篇</strong>
-      <div class="article-nav-title">
-        
-          《Java 编程的逻辑》第 7 章
-        
-      </div>
-    </a>
   
-  
-    <a href="/2023/11/27/%E3%80%8AJava%E7%BC%96%E7%A8%8B%E7%9A%84%E9%80%BB%E8%BE%91%E3%80%8B%E7%AC%AC5%E7%AB%A0/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2023/11/28/%E3%80%8AJava%E7%BC%96%E7%A8%8B%E7%9A%84%E9%80%BB%E8%BE%91%E3%80%8B%E7%AC%AC6%E7%AB%A0/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">《Java 编程的逻辑》第 5 章</div>
+      <div class="article-nav-title">《Java 编程的逻辑》第 6 章</div>
     </a>
   
 </nav>
@@ -248,7 +249,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
     
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%82%E5%B8%B8"><span class="nav-number">1.</span> <span class="nav-text">异常</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E5%9F%BA%E7%A1%80%E7%B1%BB"><span class="nav-number">1.</span> <span class="nav-text">常用基础类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8C%85%E8%A3%85%E7%B1%BB"><span class="nav-number">1.1.</span> <span class="nav-text">包装类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#String-%E7%B1%BB"><span class="nav-number">1.2.</span> <span class="nav-text">String 类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Array-%E7%B1%BB"><span class="nav-number">1.3.</span> <span class="nav-text">Array 类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Date-%E7%B1%BB"><span class="nav-number">1.4.</span> <span class="nav-text">Date 类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Random-%E7%B1%BB"><span class="nav-number">1.5.</span> <span class="nav-text">Random 类</span></a></li></ol></li></ol>
     
     </div>
   </aside>
